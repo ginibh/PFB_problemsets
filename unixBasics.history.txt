@@ -1,0 +1,263 @@
+    1  pwd
+    2  cd/bin/
+    3  ls -l
+    4  ls-lt
+    5  ls -lt
+    6  ls -lt| head
+    7  date; sleep2; date
+    8  date; sleep 2; date
+    9  man sleep
+   10  pwd
+   11  ../
+   12  cd ../
+   13  ls -F
+   14  man pwd
+   15  pwd
+   16  cd ~
+   17  pwd
+   18  cd /
+   19  pwd
+   20  cd ~
+   21  ls
+   22  man ls
+   23  ls d
+   24  ls -d
+   25  ls 
+   26  ls -F
+   27  ../
+   28  cd ../
+   29  ls -d
+   30  ls -F
+   31  ls
+   32  cd ~
+   33  mkdir problemsets
+   34  cd /problemsets
+   35  pwd
+   36  cd /
+   37  ls
+   38  ~
+   39  PWD
+   40  CD ~
+   41  CD ~
+   42  cd~
+   43  cd ~
+   44  ls -F
+   45  cd /problemsets
+   46  cd ~/problemsets
+   47  pwd
+   48  wget https://raw.githubusercontent.com/prog4biol/pfb2018/master/files/sequences.nt.fa
+   49  ls
+   50  man wc
+   51  wc -l
+   52  wc -l sequences.nt.fa 
+   53  wc -c sequences.nt.fa 
+   54  man head
+   55  head -n sequences.nt.fa 
+   56  man head
+   57  man head
+   58  head sequences.nt.fa
+   59  tail sequences.nt.fa 
+   60  man tail
+   61  tail -3 sequences.nt.fa 
+   62  man head
+   63  grep > sequences.nt.fa 
+   64  grep '>' sequences.nt.fa 
+   65  grep > sequences.nt.fa 
+   66  grep '>' sequences.nt.fa 
+   67  grep '>' <sequences.nt.fa 
+   68  cat sequences.nt.fa 
+   69  grep
+   70  wget https://raw.githubusercontent.com/prog4biol/pfb2018/master/files/sequences.nt.fa
+   71  ls
+   72  rmdir sequences.nt.fa
+   73  man mv
+   74  man mv
+   75  mv sequences.nt.fa.1 sequences.nt.fa 
+   76  ls
+   77  mv sequences.nt.fa cancer_genes.fasta
+   78  ls
+   79  wget https://raw.githubusercontent.com/prog4biol/pfb2018/master/files/cuffdiff.txt
+   80  ls
+   81  head cuffdiff.txt 
+   82  man head
+   83  head -1 cuffdiff.txt 
+   84  head -1 cancer_genes.fasta 
+   85  man sort
+   86  sort 'log2(fold_change)' cuffdiff.txt 
+   87  man sort
+   88  cat cuffdiff.txt 
+   89  cat cuffdiff.txt | column -t
+   90  man sort 
+   91  man sort
+   92  man sort
+   93  man sort
+   94  sort -g -k10 > sorted.cuffdiff.out 
+   95  ls
+   96  cat sorted.cuffdiff.out 
+   97  sort -g -k10 cuffdiff.out> sorted.cuffdiff2.out
+   98  cat cuffdiff.txt 
+   99  man sort
+  100  man sort
+  101  head cuffdiff.txt 
+  102  head cuffdiff.txt | column -t
+  103  cut -f 10
+  104  cut -f 10 cuffdiff.txt 
+  105  man sort 
+  106  sort -g, k10 cuffdiff.txt > sorted2.cuffdiff.txt
+  107  sort -g k10 cuffdiff.txt > sorted2.cuffdiff.txt
+  108  sort g k10 cuffdiff.txt > sorted2.cuffdiff.txt
+  109  sort k10,g cuffdiff.txt > sorted2.cuffdiff.txt
+  110  sort -k 10, g cuffdiff.txt > sorted2.cuffdiff.txt
+  112  sort -k 10 g cuffdiff.txt > sorted2.cuffdiff.txt
+  113  man sort
+  114  sort -k 10 -g cuffdiff.txt > sorted2.cuffdiff.txt
+  115  cat sorted2.cuffdiff.txt 
+  116  head sorted2.cuffdiff.txt 
+  117  sort -k 10 -g -r cuffdiff.txt|head -100 > top100.sorted.cuffdiff.out
+  118  wc -l top100.sorted.cuffdiff.out 
+  119  cat top100.sorted.cuffdiff.out 
+  120  sort -k 10 -g -r cuffdiff.txt|head -100| cut -k 1 > differentially.expressed.genes.txt 
+  121  sort -k 10 -g -r cuffdiff.txt|head -100| cut k 1 > differentially.expressed.genes.txt 
+  122  sort -k 10 -g -r cuffdiff.txt|head -100| cut -f 1 > differentially.expressed.genes.txt 
+  123  cat differentially.expressed.genes.txt 
+  124  echo "# PFB_problemsets" >> README.md
+  125  git init
+  126  git add README.md
+  127  git commit -m "first commit"
+  128  git remote add origin https://github.com/ginibh/PFB_problemsets.git
+  129  git push -u origin master
+  130  ls
+  131  cat top100.sorted.cuffdiff.out 
+  132  history
+  133  ls
+  134  ls -A
+  135  pwd
+  136  rm -rf .git 
+  137  ls -A
+  138  cd ../
+  139  mkdir RBPFB2018
+  140  cd ~/RBPFB2018/
+  141  echo "# PFB_problemsets" >> README.md
+  142  git init
+  143  git add README.md
+  144  git commit -m "first commit"
+  145  git remote add origin https://github.com/ginibh/PFB_problemsets.git
+  146  git push -u origin master
+  147  ls -a
+  148  mv ../problemsets/cancer_genes.fasta .
+  149  ls
+  150  git add cancer_genes.fasta 
+  151  git commit -m 'want to move this file'
+  152  git status
+  153  rm -rf .git
+  154  git init 
+  155  git remote add origin 
+  156  git remote add origin https://github.com/ginibh/PFB_problemsets.git
+  157  git pull origin master
+  158  mv README.md ../
+  159  git pull origin master
+  160  mv ../README.md .
+  161  git add 
+  162  git add README.md
+  163  git commit -m
+  164  git commit -m 'first commit'
+  165  git status
+  166  git log --oneline 
+  167  git push origin master
+  168  ls -A
+  169  nano firsfile.txt
+  170  git add firsfile.txt 
+  171  git commit 
+  172  git log
+  173  git commit -m 'first file'
+  174  EDITOR=emacs
+  175  git config --global --edit
+  176  git config --list
+  177  git config --help
+  178  git config --add user.name ginibh
+  179  git config --add user.email "ragini.bhargava31@gmail.com"
+  180  git config --list
+  181  git status
+  182  git log --oneline
+  183  git push origin master
+  184  ls -A
+  185  git clone https://github.com/prog4biol/pfb2018.git
+  186  ls -a
+  187  git add cancer_genes.fasta 
+  188  git commit -m 'want to add this file'
+  189  git push origin master
+  190  cd ~
+  191  ls
+  192  cd problemsets
+  193  ls
+  194  cd ../RBPFB2018
+  195  mv ../problemsets .
+  196  ls -a
+  197  git add problemsets
+  198  git commit -m 'add problemsets'
+  199  git push origin master
+  200  ls- A
+  201  ls -A
+  202  mv ../RBPFB2018/problemsets ../
+  203  cd ..
+  204  cd ~
+  205  ls -A
+  206  cd problemsets
+  207  mv problemsets ../RBPFB2018
+  208  cd ../~
+  209  cd !
+  210  cd ~
+  211  ls -A
+  212  mv ~/problemsets ~/RBPFB2018
+  213  RBPFB2018
+  214  mv problemsets .
+  215  mv problemsets ./RBPFB2018
+  216  ls -A
+  217  cd RBPFB2018
+  218  ls -A
+  219  problemsets
+  220  cd problemsets
+  221  ls -A
+  222  mk dir files
+  223  mkdir files
+  224  ls -A
+  225  mv ../cancer_genes.fasta ./files
+  226  cd files
+  227  ls -A
+  228  git add files/cancer_genes.fasta
+  229  cd ../
+  230  ls -a
+  231  cd ../
+  232  ls -a
+  233  git status
+  234  git add   
+  235  git add problemsets/files/cancer_genes.fasta  
+  236  git status
+  237  git commit -m 'moved cancer gen'
+  238  git push origin master
+  239  nano mysequences.txt
+  240  ls -A
+  241  git add mysequences.txt
+  242  git commit -m 'adding txt file'
+  243  git push origin master
+  244  mkdir fastas
+  245  mv problemsets/files/cancer_genes.fasta fastas
+  246  fastas
+  247  cd fasta
+  248  cd fastas
+  249  ls -a
+  250  cd ../problemsets/files
+  251  git status
+  252  mv ../../fastas/cancer_genes.fasta .
+  253  git status
+  254  cp cancer_genes.fasta ../../cancer_genes.fasta
+  255  git status
+  256  cp cancer_genes.fasta ../../fastas
+  257  cd ../../
+  258  fastas
+  259  cd fastas
+  260  ls -a
+  261  git status
+  262  cd ~/RBPFB2018
+  263  history
+  264  history > unixBasics.history.txt
