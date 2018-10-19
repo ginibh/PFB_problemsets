@@ -15,4 +15,6 @@ for sites in re.finditer(r"([AG]AATT[CT])",longseq):#another way to list sites
 	print(sites.group())
 new_longseq=re.sub(r'([AG])(AATT[CT])',r"\1^\2",longseq)#setting groups with parantheses and then using groups to replace
 print(new_longseq) 
-
+Cut_products=new_longseq.split('^')
+size_cut=sorted(Cut_products,key=len,reverse=True)
+print(size_cut)
