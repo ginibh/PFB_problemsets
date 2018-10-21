@@ -26,7 +26,8 @@ class seqCharacteristics(object):#create a class
 		return fasta
  
 char_1=seqCharacteristics('ATGCTAGCTACGTAGCTAGCA','rb1','My fiction')#these define your object
-for char in [char_1]:
+char_2=seqCharacterisitcs('ATGCTAGCTACGTAGCTAGCA','rb1','My fiction')
+for char in [char_1,char_2]:
 	print('Name of sequence:',char.seq_name,'','Name of species:',char.species_name)#notice char.something this is really important for the code to work and is referring to the things in char_1
 	print('Sequence length:',char.len_sequence())
 	print('Nucleotide composition:',char.nucleotidecomp())
